@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #e9e3e6;
+}
+
+
+.chat-app {
+  display: flex;
+  height: 100vh;
+  max-width: 1200px;
+  margin: auto;
+  background: #c1a1a1;
+  box-shadow: 0 0 30px rgba(0,0,0,0.1);
+}
+
+
+.sidebar {
+  width: 30%;
+  border-right: 1px solid #ddd;
+  background: #05dce8;
+}
+
+.profile {
+  padding: 20px;
+  text-align: center;
+}
+
+.profile img {
+  width: 70px;
+  border-radius: 50%;
+}
+
+.profile h3 {
+  margin-top: 10px;
+}
+
+.search-box {
+  padding: 10px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.chat-list {
+  list-style: none;
+}
+
+.chat-list li {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.chat-list li.active,
+.chat-list li:hover {
+  background: #e3f2fd;
+}
+
+.chat-list img {
+  width: 45px;
+  border-radius: 50%;
+}
+
+
+.chat-area {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.chat-header img {
+  width: 45px;
+  border-radius: 50%;
+}
+
+.chat-header span {
+  font-size: 12px;
+  color: green;
+}
+
+
+.chat-messages {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background: #1d0808;
+}
+
+.message {
+  max-width: 60%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+.message.received {
+  background: #fff;
+  align-self: flex-start;
+}
+
+.message.sent {
+  background: #0d6efd;
+  color: #fff;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+
+.chat-input {
+  display: flex;
+  padding: 15px;
+  border-top: 1px solid #ddd;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+}
+
+.chat-input button {
+  margin-left: 10px;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+  background: #0d6efd;
+  color: white;
+  cursor: pointer;
+}
